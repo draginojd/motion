@@ -10,6 +10,28 @@ html, body{
   background-color: rgb(17, 17, 17);
 }
 
+
+.slide-in{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(61, 61, 61);
+  transform-origin: right;
+  bottom: 0%;
+  top: 0%;
+}
+
+.slide-out{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(88, 88, 88);
+  transform-origin: left;
+  bottom: 0%;
+  left: 0%;
+}
+
+
 nav{
   display: flex;
   position: fixed;
@@ -40,7 +62,7 @@ nav .nav-links{
   flex-direction: row;
 
 align-items: center;
-justify-content: center;
+justify-content: right;
 
 
 }
@@ -48,7 +70,8 @@ justify-content: center;
 nav .nav-links .nav-item{
   display: flex;
   justify-content: center;
- width:15%;
+ width:10%;
+
 
 }
 
@@ -92,3 +115,44 @@ a.nav-link.active h1{
   
 }
 
+
+/*HOME */
+.home-containers{
+  width: 100vw;
+  height: 100%;
+  background-color: yellow;
+}
+
+.container{
+  display: grid;
+ 
+  top: 20%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: purple;
+}
+
+.home-containers .container .cards{
+  display: flex;
+ 
+  width: 100vw;
+  height: 100%;
+  
+
+}
+
+.card{
+  width: 100%;
+  height: 100%;
+  border-radius: 2% ;
+  margin: 2%;
+  background-color: rgb(255, 255, 255);
+}
+
+.home-containers .container h1{
+ 
+  width: 100%;
+  background-color: red;
+}

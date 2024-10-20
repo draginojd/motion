@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link, NavLink} from "react-router-dom";
 import picture from "../assets/portfolio-LOGO.svg";
+import transition from '../transition';
 
 
 export const NavBar = () => {
@@ -21,18 +22,18 @@ export const NavBar = () => {
                 
             </div>
             <div className="nav-item">
-                <Link className="nav-link" to="/about" activeClassname="active-link"  >
+                <NavLink className="nav-link" to="/about" activeClassname="active-link"  >
                 <h1>About</h1>
-                </Link>
+                </NavLink>
             </div>
             <div className="nav-item">
-                <Link className="nav-link" to="/contact" activeClassname="active-link" >
+                <NavLink className="nav-link" to="/contact" activeClassname="active-link" >
                 <h1>Contact</h1>
-                </Link>
+                </NavLink>
             </div>
         </div>
     </nav>
   );
 };
 
-export default NavBar;
+export default transition(NavBar);
