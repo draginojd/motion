@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 184.58 97.99">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #22b573;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-family: 'AniMeMatrix-MB_EN', 'AniMe Matrix - MB_EN';
+        font-size: 14px;
+      }
+
+      .cls-2 {
+        stroke: #00bff3;
+      }
+
+      .cls-3 {
+        stroke: #ee266b;
+      }
+    </style>
+    <symbol id="New_Symbol_1" data-name="New Symbol 1" viewBox="0 0 184.58 97.99">
+      <g>
+        <ellipse class="cls-1" cx="89.65" cy="31.62" rx="28.88" ry="28.62"/>
+        <text class="cls-4" transform="translate(10.89 86.77) scale(.96 1)"><tspan x="0" y="0">Armin Fazli Khan</tspan></text>
+        <ellipse class="cls-2" cx="92.16" cy="37.59" rx="28.88" ry="28.62"/>
+        <ellipse class="cls-3" cx="103.53" cy="38.77" rx="28.88" ry="28.62"/>
+        <text/>
+      </g>
+    </symbol>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer_1">
+    <use width="184.58" height="97.99" xlink:href="#New_Symbol_1"/>
+  </g>
+</svg>
