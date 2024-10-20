@@ -13,6 +13,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+nav.a.active-link h1{
+  color: red;
+}
+
+/* a.nav-link.active h1{
+  color: red;
+} */
+
 a {
   font-weight: 500;
   color: #646cff;

@@ -24,7 +24,7 @@ nav{
 nav .logo{
   display: grid;
   align-items: center;
-  justify-content: left;
+  justify-content: right;
   width: 20%;
  
   position: relative;
@@ -48,7 +48,7 @@ justify-content: center;
 nav .nav-links .nav-item{
   display: flex;
   justify-content: center;
- width: 8%;
+ width:15%;
 
 }
 
@@ -62,14 +62,11 @@ nav .nav-links .nav-item .nav-link{
 }
 
 .nav-link h1{
-  font-weight: 200;
-  font-size: 1.5em;
- 
+  font-weight: 300;
+  font-size: clamp(0.5em, 1.2em ,1.5em);
+
 }
 
-.nav-link h1{
-  border-bottom: 1px solid white;
-}
 
 .nav-link img{
   display: flex;
@@ -80,3 +77,18 @@ nav .nav-links .nav-item .nav-link{
 
 
 }
+
+a.nav-link.active{
+  border-radius: 4%;
+
+  box-shadow: rgb(0, 0, 0) 0 0 2px 1px;
+padding: 5%;
+
+}
+
+a.nav-link.active h1{
+  color: rgb(0, 255, 149);
+  border-bottom: solid 1px;
+  
+}
+
