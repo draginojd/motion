@@ -12,6 +12,9 @@ export const NavBar = () => {
             <img src={picture} alt="Logo" />
             </Link>
         </div>
+
+
+        
         <div className="nav-links">
             <div className="nav-item">
 

@@ -1,6 +1,8 @@
 import React from 'react';
 import transition from '../transition';
 
+
+
 export const About = () => {
   return (
     <div>
@@ -8,5 +10,6 @@ export const About = () => {
     </div>
   );
 };
+
 
 export default transition(About);
