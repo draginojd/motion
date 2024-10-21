@@ -1,52 +1,46 @@
 import React from 'react';
 import transition from '../transition';
-import { motion } from "framer-motion";
+import { animate, easeIn, motion, stagger } from "framer-motion";
+
+import Marquee from "react-fast-marquee";
+
+import { useState } from "react";
 
 
-const cards = {
-    hidden: { opacity: 1, scale: 0.5},
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: {
-        delayChildren: 1,
-        staggerChildren: 10
-      }
-    }
-   
-  };
-  
-  const card = {
-   
-    hidden: {x: 0},
-    visible: {y: 0, opacity: 1, x: "1"},
-    transition: {  repeat:Infinity,duration: 1}
-  
-  };
+
+
+
+const images = [
+  "../card1.png",
+  "./image-2.jpg",
+  "/image-3.jpg",
+  "/image-4.jpg",
+  "/image-5.jpg",
+  "/image-6.jpg",
+  "/image-7.jpg",
+]
+
+
+ 
 
 export const Card = () => {
+
+ 
   return (
-    <div className="card-container">
 
-<motion.div className="cards" 
-             
-             variants={cards}
-             initial="hidden"
-             transition={{duration: 5, ease: [5.22, 1, 4.4, 1]}}
-             animate={{ rotate:0,x: "0%"}}
-            
-       >
+    
+    <div className="cards">
+      <Marquee>
 
-           {[[1,2,3,4,5,6]].map((index) => (
-         <motion.div  key={index} className="card" variants={card} 
-         
-         transition={{repeat:Infinity ,duration: 5 }}
-         animate={{ rotate:0,x: "50%"}}/>
-       ))}
-       
-       </motion.div>
+        <motion.div 
+                    className="card"
+        > 
+        Read More
+        </motion.div>
 
-  </div>
+
+</Marquee>
+    </div>
   );
 };
 

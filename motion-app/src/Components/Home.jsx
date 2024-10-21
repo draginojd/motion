@@ -2,19 +2,7 @@ import React from 'react';
 import transition from '../transition';
 import { motion } from "framer-motion";
 import Card from "./Card";
-
-
-
-const images = [
-  "/image-1.jpg",
-  "/image-2.jpg",
-  "/image-3.jpg",
-  "/image-4.jpg",
-  "/image-5.jpg",
-  "/image-6.jpg",
-  "/image-7.jpg",
-]
-
+import Data from '../CardData';
 
 
 export const Home = () => {
@@ -34,10 +22,18 @@ export const Home = () => {
 
 
       <div className="container">
+      {Data.map((data) => (
+        <Card 
+        key={data.id}
+        title={data.title}
+        description={data.description}
+        imageUrl={data.imageUrl}
+        />
+       
 
-   <Card />
-
+      ))}
       </div>
+      
     </div>
   );
 };
